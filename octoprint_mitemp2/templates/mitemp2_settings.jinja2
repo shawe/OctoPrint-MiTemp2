@@ -1,0 +1,48 @@
+<form class="form-horizontal" id="settings_plugin_mitemp2">
+    <h3>{{  _('Xiaomi MiTemperature2 Configuration') }}</h3>
+
+    <ul class="nav nav-pills">
+        <li class="active">
+            <a href="#settings_plugin_mitemp2_config" data-toggle="tab">
+                {{ _('Configuration') }}
+            </a>
+        </li>
+        <li>
+            <a href="#settings_plugin_mitemp2_credits" data-toggle="tab">
+                {{ _('Credits') }}
+            </a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="settings_plugin_mitemp2_config" class="tab-pane active">
+            <div class="control-group">
+                <label class="control-label">{{ _('MAC Address') }}</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level" data-bind="value: settings.plugins.mitemp2.mac_address, valueUpdate: 'afterkeydown'">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">{{ _('Seconds') }}</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level" data-bind="value: settings.plugins.mitemp2.seconds, valueUpdate: 'afterkeydown'">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">{{ _('Command') }}</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level" data-bind="value: settings.plugins.mitemp2.command, valueUpdate: 'afterkeydown'">
+                </div>
+            </div>
+        </div>
+        <div id="settings_plugin_mitemp2_credits" class="tab-pane">
+            <p>
+                All main work do it on <a href="https://github.com/JsBergbau/MiTemperature2" target="_blank">MiTemperature2 from JsBergbau</a>, I integrate it on OctoPrint.
+            </p>
+
+            <p>
+                More info on <a href="https://github.com/shawe/octoprint-mitemp2" target="_blank">https://github.com/shawe/octoprint-mitemp2</a>.
+            </p>
+        </div>
+    </div>
+</form>
