@@ -1,12 +1,3 @@
-<div id="navbar_plugin_mitemp2">
-    <p class="nav navbar-text">
-        MiTemp2 (
-        {settings.plugins.mitemp2.mac_address} -
-        {settings.plugins.mitemp2.temp} ºC -
-        {settings.plugins.mitemp2.humidity} % -
-        {settings.plugins.mitemp2.bat_voltage} V -
-        {settings.plugins.mitemp2.bat_level} %
-        )
-    </span>
-    </p>
+<div id="mitemp2_plugin_navbar">
+    <p class="nav navbar-text" data-bind="visible: True, html: navBarMessage"></p>
 </div>
